@@ -1,90 +1,62 @@
-Here's the most attractive, ready-to-use README design that will display perfectly on GitHub:
+# ⚡ DeauthStrom — Advanced Wi-Fi Attack Framework
 
-```markdown
-# <div align="center">⚡ DeauthStrom ⚡</div>
-<div align="center">
-  <strong>Enterprise Wireless Security Assessment Tool</strong>
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Version-5.2.1-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-GPL%203.0-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Python-3.9%2B-green?style=for-the-badge">
-</div>
-
-<br>
-
-<div align="center">
-  <img width="50%" src="https://i.imgur.com/JQ9wWOn.png" alt="DeauthStrom Banner">
-</div>
-
-## 🔥 Features
-- **Zero-Day Exploit Integration** (CVE-2023-XXXXX)
-- **Multi-Radio Coordination** (Synchronized attacks)
-- **AI-Powered Packet Timing** (μs precision)
-- **Enterprise Mode** (WPA3-Enterprise support)
-- **Spectrum Visualization** (Real-time RF analysis)
-
-## 🚀 Quick Start
-```bash
-git clone https://github.com/collectingnoobs/DeauthStrom.git
-cd DeauthStrom
-chmod +x deauthstrom
-sudo ./deauthstrom --help
-```
-
-## 💻 Usage Examples
-```bash
-# Basic deauth attack
-sudo ./deauthstrom -i wlan0mon -b AA:BB:CC:DD:EE:FF
-
-# Enterprise penetration
-sudo ./deauthstrom --enterprise --ssid "CORP_WIFI"
-
-# Multi-AP coordinated strike
-sudo ./deauthstrom --mass --channels 1,6,11
-```
-
-## 📊 Performance
-| Hardware | Frame Rate | Range |
-|----------|-----------|-------|
-| Intel AX210 | 2,400 FPS | 300m |
-| RTL8814AU | 1,800 FPS | 200m |
-| Atheros AR9280 | 950 FPS | 150m |
-
-## 📜 License
-GNU General Public License v3.0
-
-## 📡 Contact
-<div align="center">
-  <a href="https://t.me/collectingnoobs">
-    <img src="https://img.shields.io/badge/Telegram-@CollectingNoobs-blue?logo=telegram">
-  </a>
-</div>
+> Created by **Uwes Kulabkar**  
+> 📡 Telegram: [@collectingnoobs](https://t.me/collectingnoobs)
 
 ---
 
-<div align="center">
-  <sub>Created by Uwes Kulabkar | © 2024 DeauthStrom Project</sub>
-</div>
-```
+## 🔥 Overview
 
-Key visual elements:
-1. Centered header with lightning emojis
-2. Custom badge styling
-3. Placeholder for banner image (replace URL)
-4. Clean feature listing with emoji bullets
-5. Code blocks with syntax highlighting
-6. Performance table with real metrics
-7. Centered contact button
-8. Footer with copyright notice
+**DeauthStrom** is a cutting-edge, modular Wi-Fi attack framework built for offensive wireless testing. It empowers security researchers, penetration testers, and Wi-Fi auditing professionals with a complete suite of 802.11-based attacks — all from an elegant terminal-driven interface.
 
-This will display beautifully on GitHub with:
-- Proper spacing
-- Visual hierarchy
-- Mobile responsiveness
-- Professional yet attractive styling
+Whether you're launching targeted deauths, performing authentication floods, or conducting full-spectrum jamming, DeauthStrom provides **reliable automation, real-time feedback, and smart interface control**.
 
-Just copy-paste this directly into your README.md file - no additional formatting needed!
+---
+
+## 💣 Key Features
+
+- 🛰️ **Targeted Deauthentication**
+  - Kick a single client or all clients off a specific access point using `aireplay-ng`.
+
+- 🔐 **Authentication Flood**
+  - Flood target APs with fake auth requests using `mdk4`.
+
+- 🌪️ **Beacon Flood**
+  - Create hundreds of fake SSIDs to confuse or overload client devices.
+
+- ⚔️ **Mass Deauth (Global Attack)**
+  - Automatically deauthenticate all detected networks in range.
+
+- 📡 **Channel Jamming**
+  - Jam all 2.4GHz and/or 5GHz channels in a rotating attack.
+
+- 🧠 **Smart Scanning**
+  - Live scan Wi-Fi networks and identify connected clients using `airodump-ng`.
+
+- 🧰 **Interface Auto Handling**
+  - Auto-detects wireless interfaces and enables monitor mode via `airmon-ng`.
+
+- 🛡️ **MAC Address Randomization**
+  - Anonymize each attack session with randomized MAC addresses (`macchanger`).
+
+- 🖥️ **Attack Sessions in External Terminals**
+  - All attacks launch in individual `xterm` or `gnome-terminal` windows.
+
+- 📝 **Detailed Logging**
+  - Session activity and errors logged to `/tmp/deauthstrom.log`.
+
+---
+
+## 📸 Screenshots
+
+> *(Optional: Add images of the tool in action here)*
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/deauthstrom.git
+cd deauthstrom
