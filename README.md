@@ -1,4 +1,4 @@
-# ⚡ DeauthStrom — Advanced Wi-Fi Attack Framework
+# ⚡ DeauthStrom — The Ultimate Wi-Fi Attack & Jamming Framework
 
 > Created by **Uwes Kulabkar**  
 > 📡 Telegram: [@collectingnoobs](https://t.me/collectingnoobs)
@@ -7,9 +7,9 @@
 
 ## 🔥 Overview
 
-**DeauthStrom** is a cutting-edge, modular Wi-Fi attack framework built for offensive wireless testing. It empowers security researchers, penetration testers, and Wi-Fi auditing professionals with a complete suite of 802.11-based attacks — all from an elegant terminal-driven interface.
+**DeauthStrom** is the **ultimate Python-based Wi-Fi attack and jamming framework**, designed for wireless penetration testers, red teamers, and cybersecurity enthusiasts. It delivers a comprehensive and automated suite of 802.11 wireless exploits, allowing professionals to dominate any local wireless environment with precision and control.
 
-Whether you're launching targeted deauths, performing authentication floods, or conducting full-spectrum jamming, DeauthStrom provides **reliable automation, real-time feedback, and smart interface control**.
+Unlike basic scripts or GUI tools, **DeauthStrom integrates multiple attack vectors**, real-time scanning, MAC spoofing, and full interface automation into a single unified terminal experience — making it one of the most powerful Wi-Fi attack tools available today.
 
 ---
 
@@ -47,12 +47,6 @@ Whether you're launching targeted deauths, performing authentication floods, or 
 
 ---
 
-## 📸 Screenshots
-
-> *(Optional: Add images of the tool in action here)*
-
----
-
 ## 🚀 Installation
 
 ### 1. Clone the Repository
@@ -60,3 +54,56 @@ Whether you're launching targeted deauths, performing authentication floods, or 
 ```bash
 git clone https://github.com/yourusername/deauthstrom.git
 cd deauthstrom
+
+2. Install Dependencies
+
+sudo apt update
+sudo apt install aircrack-ng mdk4 macchanger iw xterm -y
+
+    💡 If using GNOME desktop, replace xterm with gnome-terminal.
+
+⚙️ Usage
+
+Run the tool with root privileges:
+
+sudo python3 deauthstrom.py
+
+🧭 Main Menu
+
+1. Scan Networks
+2. Global Attacks
+3. Exit
+
+🎯 Attack Options (Post Scan)
+
+1. Deauth Attack (Single Client)
+2. Deauth Attack (All Clients)
+3. Auth Flood
+4. Beacon Flood (Fake APs)
+5. Mass Deauth (All Networks)
+6. Jam All Channels
+7. Back to Main Menu
+
+🔬 Technical Stack
+Component	Description
+Language	Python 3
+Wireless Tools	aircrack-ng, mdk4, macchanger, iw, iwconfig
+Execution	External terminals for each attack (xterm)
+Scanning	CSV parsing of airodump-ng output
+Security	Interface validation, MAC spoofing, cleanup
+Logging	Full session logging at /tmp/deauthstrom.log
+⚠️ Legal Disclaimer
+
+    This project is intended for educational purposes and authorized penetration testing only. Unauthorized access or interference with wireless networks is illegal and punishable by law.
+
+    The author Uwes Kulabkar and the contributors are not responsible for any misuse or damages caused by this tool.
+
+Use it responsibly.
+👤 Author
+
+Uwes Kulabkar
+📨 Telegram: @collectingnoobs
+💬 Community & Support
+
+📢 Join our Telegram group for updates, discussions, and support:
+https://t.me/collectingnoobs
